@@ -6,12 +6,11 @@
         --white:  #fcfcfc; }
 *       { margin: 0; padding: 0; box-sizing: border-box; }
 html    { scroll-behavior: smooth; }
-body    { overflow-x: hidden; font-family: 'DM Sans', sans-serif; }
 
+body    { overflow-x: hidden; font-family: 'DM Sans', sans-serif; }
 .body   { margin: 0 auto; max-width: 1920px; background: var(--beige); }
 .body-cr{ margin: 0 auto; max-width: 1920px; background: var(--cream); }
 .body-nr{ margin: 0 auto; max-width: 1040px; background: var(--beige); } 
-
 nav     { display: flex; justify-content: space-between; background: var(--brown); padding: 2vh 4vw;
           position: sticky; top: 0vh; z-index: 100; }
 .nav, .stat 
@@ -41,7 +40,7 @@ section { margin: 0 auto; padding: 12vh 4vw; }
         { position: absolute; bottom: vh; right: 4vw;
           z-index: 1; font-size: 14rem; font-weight: 600; color: var(--beige); opacity: 0.4; }
 .banner-txt     
-        { z-index: 2; }
+        { z-index: 2; max-width: 560px; }
 .colbox-ct
         { text-align: center; }
 .colbox, .colbox-ct
@@ -136,8 +135,9 @@ p       { font-size: 16px; font-weight: 400; line-height: 1.8; color: var(--blac
 .btn    { margin-bottom: 4vh; }  
 .stat, .nav   
         { bottom: -6vh; right: 2vw; gap: 3vh 3vw; }
-.project
-        { display: grid; grid-template-columns: 1fr; }  
+.project{ display: grid; grid-template-columns: 1fr; } 
+.project-img
+        { order: +1; } 
 .project h2, .project h2 span 
         { font-size: 2.4rem; }
 .project h4   
